@@ -35,7 +35,7 @@
             // 
             // btnPulsar
             // 
-            btnPulsar.Location = new Point(36, 132);
+            btnPulsar.Location = new Point(67, 164);
             btnPulsar.Name = "btnPulsar";
             btnPulsar.Size = new Size(179, 80);
             btnPulsar.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(234, 44);
+            txtNombre.Location = new Point(243, 91);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(221, 39);
             txtNombre.TabIndex = 1;
@@ -53,7 +53,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(216, 9);
+            label1.Location = new Point(225, 56);
             label1.Name = "label1";
             label1.Size = new Size(252, 32);
             label1.TabIndex = 2;
