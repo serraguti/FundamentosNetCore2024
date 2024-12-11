@@ -17,6 +17,11 @@ namespace FundamentosNetCore
             this.txtNombre.TextAlign = HorizontalAlignment.Right;
             this.btnPulsar.BackColor =
                 Color.LightGreen;
+
+            //CUALQUIER OBJETO A STRING            
+            int numero = 88;
+            string texto = numero.ToString();
+            texto = btnPulsar.ToString();
         }
     }
 }
