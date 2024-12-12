@@ -1,6 +1,6 @@
 ﻿namespace FundamentosNetCore
 {
-    partial class Form06ValidarMail
+    partial class Form07SumarNumerosString
     {
         /// <summary>
         /// Required designer variable.
@@ -29,59 +29,59 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            txtEmail = new TextBox();
-            btnValidarMail = new Button();
+            txtNumeros = new TextBox();
+            btnSumarNumeros = new Button();
             lblResultado = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(33, 19);
+            label1.Location = new Point(47, 18);
             label1.Name = "label1";
-            label1.Size = new Size(213, 32);
+            label1.Size = new Size(227, 32);
             label1.TabIndex = 0;
-            label1.Text = "Introduzca un mail";
+            label1.Text = "Introduzca números";
             // 
-            // txtEmail
+            // txtNumeros
             // 
-            txtEmail.Location = new Point(40, 51);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(410, 39);
-            txtEmail.TabIndex = 1;
+            txtNumeros.Location = new Point(48, 54);
+            txtNumeros.Name = "txtNumeros";
+            txtNumeros.Size = new Size(229, 39);
+            txtNumeros.TabIndex = 1;
             // 
-            // btnValidarMail
+            // btnSumarNumeros
             // 
-            btnValidarMail.Location = new Point(40, 103);
-            btnValidarMail.Name = "btnValidarMail";
-            btnValidarMail.Size = new Size(410, 49);
-            btnValidarMail.TabIndex = 2;
-            btnValidarMail.Text = "Validar Email";
-            btnValidarMail.UseVisualStyleBackColor = true;
-            btnValidarMail.Click += btnValidarMail_Click;
+            btnSumarNumeros.Location = new Point(50, 108);
+            btnSumarNumeros.Name = "btnSumarNumeros";
+            btnSumarNumeros.Size = new Size(227, 55);
+            btnSumarNumeros.TabIndex = 2;
+            btnSumarNumeros.Text = "Sumar números";
+            btnSumarNumeros.UseVisualStyleBackColor = true;
+            btnSumarNumeros.Click += btnSumarNumeros_Click;
             // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(41, 170);
+            lblResultado.Location = new Point(51, 178);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(144, 32);
             lblResultado.TabIndex = 3;
             lblResultado.Text = "lblResultado";
             // 
-            // Form06ValidarMail
+            // Form07SumarNumerosString
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(502, 230);
+            ClientSize = new Size(522, 240);
             Controls.Add(lblResultado);
-            Controls.Add(btnValidarMail);
-            Controls.Add(txtEmail);
+            Controls.Add(btnSumarNumeros);
+            Controls.Add(txtNumeros);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(6);
-            Name = "Form06ValidarMail";
-            Text = "Form06ValidarMail";
+            Margin = new Padding(6, 6, 6, 6);
+            Name = "Form07SumarNumerosString";
+            Text = "Form07SumarNumerosString";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -89,8 +89,8 @@
         #endregion
 
         private Label label1;
-        private TextBox txtEmail;
-        private Button btnValidarMail;
+        private TextBox txtNumeros;
+        private Button btnSumarNumeros;
         private Label lblResultado;
     }
 }
