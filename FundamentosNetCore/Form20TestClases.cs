@@ -24,12 +24,12 @@ namespace FundamentosNetCore
             persona.Nombre = "Alumno";
             persona.Apellidos = "Navidad";
             persona.Edad = 25;
-            persona.Genero =  TipoGenero.Femenino;
+            persona.Genero = TipoGenero.Femenino;
 
             this.lstClases.Items.Add("Indizada " + persona[0]);
             this.lstClases.Items.Add("Indizada " + persona[33]);
             persona.Nacionalidad = Paises.Andorra;
-            
+
             persona.Domicilio.Calle = "Oficina principal de Correos";
             persona.Domicilio.Ciudad = "Napapiiri, Finlandia";
             persona.Domicilio.CodigoPostal = 96930;
@@ -44,6 +44,30 @@ namespace FundamentosNetCore
             this.lstClases.Items.Add("Género: "
                 + persona.Genero + ", Nacionalidad: "
                 + persona.Nacionalidad);
+        }
+
+        private void btnEmpleado_Click(object sender, EventArgs e)
+        {
+            //Empleado empleado = new Empleado("Empleado", "Empleado");
+            Empleado empleado = new Empleado();
+            empleado.Nombre = "Empleado";
+            empleado.Apellidos = "Empleado";
+ 
+            this.lstClases.Items.Add(empleado.GetNombreCompleto());
+            this.lstClases.Items.Add("Vacaciones Empleado "
+                + empleado.GetDiasVacaciones());
+            this.lstClases.Items.Add("Salario empleado " 
+                + empleado.GetSalarioMinimo());
+
+            Director dire = new Director();
+            dire.Nombre = "Dire";
+            dire.Apellidos = "Director";
+            this.lstClases.Items.Add(dire.GetNombreCompleto());
+            this.lstClases.Items.Add("Vacaciones Director "
+                + dire.GetDiasVacaciones());
+
+            this.lstClases.Items.Add("Salario Dire "
+                + dire.GetSalarioMinimo());
         }
     }
 }

@@ -31,6 +31,7 @@
             label1 = new Label();
             lstClases = new ListBox();
             btnPersona = new Button();
+            btnEmpleado = new Button();
             SuspendLayout();
             // 
             // label1
@@ -60,16 +61,27 @@
             btnPersona.UseVisualStyleBackColor = true;
             btnPersona.Click += btnPersona_Click;
             // 
+            // btnEmpleado
+            // 
+            btnEmpleado.Location = new Point(328, 400);
+            btnEmpleado.Name = "btnEmpleado";
+            btnEmpleado.Size = new Size(158, 61);
+            btnEmpleado.TabIndex = 3;
+            btnEmpleado.Text = "Empleado";
+            btnEmpleado.UseVisualStyleBackColor = true;
+            btnEmpleado.Click += btnEmpleado_Click;
+            // 
             // Form20TestClases
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(705, 488);
+            Controls.Add(btnEmpleado);
             Controls.Add(btnPersona);
             Controls.Add(lstClases);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "Form20TestClases";
             Text = "Form20TestClases";
             ResumeLayout(false);
@@ -81,5 +93,6 @@
         private Label label1;
         private ListBox lstClases;
         private Button btnPersona;
+        private Button btnEmpleado;
     }
 }
